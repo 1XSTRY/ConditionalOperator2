@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         //task2();
-        //task3();
+        task3();
         //task4();
        //task5();
     }
@@ -23,6 +23,19 @@ public class Main {
         } else if (clientOs == 0 && clientModel < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
+    }
+    public static void task3 (){
+        int year = 2021;
+
+        if (year >= 1584 && year % 4 == 0) {
+            System.out.println(year + " является високосным годом");
+        }
+            else {
+            System.out.println(year + " не является високосным годом");
+        }
+
+
+
     }
 
 
