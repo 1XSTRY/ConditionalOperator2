@@ -3,7 +3,7 @@ public class Main {
         task1();
         //task2();
         task3();
-        //task4();
+        task4();
        //task5();
     }
     public static void task1 (){
@@ -36,6 +36,23 @@ public class Main {
 
 
 
+    }
+    public static void task4 (){
+        int deliveryDistance = 95;
+        int days = getDeliveryDays(deliveryDistance);
+        System.out.println("Потребуется дней: " + days);
+    }
+
+    public static int getDeliveryDays(int deliveryDistance) {
+        if (deliveryDistance <= 20) {
+            return 1;
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            return 2;
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            return 3;
+        } else {
+            return -1;
+        }
     }
 
 
