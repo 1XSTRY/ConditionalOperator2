@@ -22,12 +22,11 @@ public class Main {
         char android = 1;
         int clientOs =1;
         char oldModel = 2015;
-        char newModel = 2016;
         int clientModel = 2013;
 
-        if (clientOs == android && clientModel >= newModel){
+        if (clientOs == android && clientModel >= oldModel){
             System.out.println("Установите версию приложения для android по ссылке");
-        }else if (clientOs == iOS && clientModel >= newModel) {
+        }else if (clientOs == iOS && clientModel >= oldModel) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }else if (clientOs == android && clientModel < oldModel) {
             System.out.println("Установите облегченную версию приложения для android по ссылке");
@@ -38,10 +37,7 @@ public class Main {
     public static void task3 (){
         int year = 2021;
 
-        if (year >= 1584 && year % 400 == 0) {
-            System.out.println(year + " является високосным годом");
-        }
-        else if (year >= 1584 && year % 4 == 0 && year % 100 != 0){
+        if (year >= 1584 && year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " является високосным годом");
         }
         else {
